@@ -1,10 +1,10 @@
 <div class="p-3">
     <ul class="nav nav-pills">
         <li>
-          <button routerLink="/home" class="btn btn-outline-primary ms-2">Home</button>
+          <button (click)="gotoHome()" [ngClass]="currentRoute=='home'?'btn btn-outline-primary ms-2 active':'btn btn-outline-primary ms-2'" >Home</button>
         </li>
         <li>
-          <button routerLink="/products" class="btn btn-outline-primary ms-2">Products</button>
+          <button (click)="gotoProducts()"[ngClass]="currentRoute=='products'?'btn btn-outline-primary ms-2 active':'btn btn-outline-primary ms-2'">Products</button>
         </li>
     </ul>
 </div>
